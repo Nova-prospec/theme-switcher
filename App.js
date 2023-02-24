@@ -10,7 +10,7 @@ function App() {
    }, [darkMode])
 
   const handleClick = () => {
-    setDarkMode(darkMode === true ? false : true)
+    setDarkMode(!darkMode)
   }
   return (
     <main className={darkMode === true ? "dark-bg" : ""}>
